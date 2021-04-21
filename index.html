@@ -927,6 +927,10 @@
       //INTRO ANIMATION
       const tl = gsap.timeline({ defaults: { opacity: 1, duration: 0.5 } });
 
+      //only run background animation if the device is not a phone or tablet
+
+      if(window.matchMedia("(min-width: 1000px)").matches){
+
       tl.to("#coffee-bean", {});
       tl.to(".path1", { opacity: 0.5, stagger: 0.3 });
       tl.to("#coffee-pot", {});
@@ -935,10 +939,12 @@
       tl.to(".path3", { opacity: 0.5, stagger: 0.3 });
       tl.to("#coffee-shop", {});
       tl.to(".bg-animation", { opacity: 0.3 });
+    }
       tl.to(".main-title", { duration: 1.5 });
       tl.to(".scroll-down", { duration: 0.2 });
       tl.to(".scroll-down", { y: "15px", duration: 1.5, repeat: 3 });
       tl.to(".scroll-down", { y: "-15px", duration: 1.5 });
+    
     </script>
     <script src="main.js"></script>
   </body>

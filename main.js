@@ -86,8 +86,9 @@ if (window.matchMedia("(min-width: 1367px)").matches) {
  })
 
 //switch between light and dark themes
-let switchBtn = document.querySelector("#switch");
-let root = document.documentElement;
+const switchBtn = document.querySelector("#switch");
+const header = document.querySelector("#header");
+const root = document.documentElement;
 root.style.setProperty("--primary-color", "#F3CF7A");
 
 switchBtn.addEventListener("click", () => {
@@ -104,12 +105,19 @@ switchBtn.addEventListener("click", () => {
       "rgba(243, 207, 122, 0.5)"
     );
     switchBtn.style.left = "25px";
+
+    //change background image on mobile devices
+    header.style.backgroundImage = 'url(assets/bg-mobile-dark.png)';
+
   } else {
     root.style.setProperty("--primary-color", "#F3CF7A");
     root.style.setProperty("--secondary-color", "#41210A");
     root.style.setProperty("--primary-transparent", "rgba(243, 207, 122, 0.5)");
     root.style.setProperty("--secondary-transparent", "rgba(65, 33, 10, 0.5)");
     switchBtn.style.left = "0px";
+
+    //change background image on mobile devices
+    header.style.backgroundImage = 'url(assets/bg-mobile.png)';
   }
 });
 

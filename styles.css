@@ -157,6 +157,10 @@ body {
           transform: rotate(23deg);
 }
 
+#header .bg-mobile {
+  display: none;
+}
+
 #header .main-title {
   width: 50%;
   margin: 0 auto;
@@ -372,6 +376,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 #award .award__right .portrait {
@@ -584,7 +589,7 @@ body {
 }
 
 #faq .faq__question .show {
-  height: 100px;
+  height: auto;
   padding-top: 50px;
   opacity: 1;
   font-size: 1.3rem;
@@ -956,6 +961,172 @@ body {
   #contact #contact-form .contact__notes,
   #contact #contact-form label {
     width: 88%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #nav {
+    padding: 25px;
+  }
+  #nav .nav__links {
+    width: 50%;
+  }
+  #header {
+    height: 60vh;
+    margin-top: 30px;
+    background: url(assets/bg-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #header .bg-animation {
+    display: none;
+  }
+  #header .main-title {
+    width: 80%;
+  }
+  .switch-theme {
+    top: 110px;
+    right: 30px;
+  }
+  #features {
+    padding: 75px 40px 0 40px;
+  }
+  #features h2 {
+    font-size: 3.5rem;
+  }
+  #features .features__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #features .features__boxes .feature__box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #features .features__boxes .feature__box h1 {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+  }
+  #award {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #award .award__left {
+    width: 100%;
+    padding: 30px;
+  }
+  #award .award__left h1 {
+    font-size: 2rem;
+  }
+  #award .award__left h1 span {
+    font-size: 4rem;
+  }
+  #award .award__right {
+    width: 100%;
+    padding: 30px;
+  }
+  #award .award__right .portrait {
+    width: 130px;
+  }
+  #award .award__right .landscape {
+    height: 130px;
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
+  }
+  #award .award__right svg {
+    top: -80px;
+    right: -60px;
+    -webkit-transform: rotate(-10deg) scale(0.4);
+            transform: rotate(-10deg) scale(0.4);
+  }
+  #social-proof {
+    padding: 100px 40px;
+  }
+  #social-proof h2 {
+    font-size: 2.5rem;
+  }
+  #social-proof .social__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #social-proof .social__boxes .social__box {
+    margin-bottom: 75px;
+  }
+  #social-proof .social__links {
+    width: 80%;
+    margin: 50px auto 25px auto;
+  }
+  #faq {
+    padding: 100px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #faq > h1 {
+    font-size: 2rem;
+    margin: 0 auto 70px auto;
+    text-align: center;
+  }
+  #faq .faq__question {
+    padding: 10px 20px;
+  }
+  #faq .faq__question > div h1 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #faq .faq__question > div svg {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  #faq .faq__question .answer {
+    font-size: 1rem;
+  }
+  #contact {
+    padding: 20px;
+  }
+  #contact p {
+    text-align: center;
+  }
+  #contact #contact-form {
+    width: 100%;
+    padding: 25px 40px 50px 40px;
+  }
+  #contact #contact-form label {
+    width: 100%;
+  }
+  #contact #contact-form > div > div input {
+    width: 80%;
+    margin-right: 30px;
+  }
+  #contact #contact-form input[name="last-name"] {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  #contact #contact-form label[for="last-name"] {
+    text-align: center;
+  }
+  #contact #contact-form .contact__email, #contact #contact-form .contact__notes {
+    width: 100%;
+  }
+  #footer {
+    height: 300px;
+    text-align: center;
+  }
+  #footer .social__links {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #footer .footer__brand {
+    bottom: 10px;
+    right: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
