@@ -107,9 +107,11 @@ switchBtn.addEventListener("click", () => {
     switchBtn.style.left = "25px";
 
     //change background image on mobile devices
-    if (window.matchMedia('(max-width: 800px)').matches){
+    if (window.matchMedia('(min-width: 800px)').matches
+    && window.matchMedia('(max-width: 1000px)').matches){
       header.style.backgroundImage = 'url(assets/bg-tablet-dark.png)';
-    } else if (window.matchMedia('(max-width: 450px)').matches){
+    } else if (window.matchMedia('(min-width: 270px)').matches
+    && window.matchMedia('(max-width: 500px)').matches){
       header.style.backgroundImage = 'url(assets/bg-mobile-dark.png)';
     } else{
       header.style.backgroundImage = 'none';
@@ -123,9 +125,11 @@ switchBtn.addEventListener("click", () => {
     switchBtn.style.left = "0px";
 
     //change background image on mobile devices
-    if (window.matchMedia('(max-width: 800px)').matches){
+    if (window.matchMedia('(min-width: 800px)').matches
+    && window.matchMedia('(max-width: 1000px)').matches){
     header.style.backgroundImage = 'url(assets/bg-tablet.png)';
-  } else if (window.matchMedia('(max-width: 450px)').matches){
+  } else if (window.matchMedia('(min-width: 270px)').matches
+  && window.matchMedia('(max-width: 500px)').matches){
     header.style.backgroundImage = 'url(assets/bg-mobile.png)';
   } else{
     header.style.backgroundImage = 'none';
