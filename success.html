@@ -35,6 +35,7 @@
         padding: 200px;
         justify-content: center;
         align-items: center;
+        opacity: 0;
       }
 
       .bean-div {
@@ -163,5 +164,14 @@
         <a href="index.html" class="cta">BACK TO HOMEPAGE</a>
       </div>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      gsap.to(".container", {opacity: 1, duration: 2});
+    </script>
   </body>
 </html>
