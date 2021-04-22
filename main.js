@@ -107,7 +107,13 @@ switchBtn.addEventListener("click", () => {
     switchBtn.style.left = "25px";
 
     //change background image on mobile devices
-    header.style.backgroundImage = 'url(assets/bg-mobile-dark.png)';
+    if (window.matchMedia('(max-width: 800px)').matches){
+      header.style.backgroundImage = 'url(assets/bg-tablet-dark.png)';
+    } else if (window.matchMedia('(max-width: 450px)').matches){
+      header.style.backgroundImage = 'url(assets/bg-mobile-dark.png)';
+    } else{
+      header.style.backgroundImage = 'none';
+    }
 
   } else {
     root.style.setProperty("--primary-color", "#F3CF7A");
@@ -117,9 +123,14 @@ switchBtn.addEventListener("click", () => {
     switchBtn.style.left = "0px";
 
     //change background image on mobile devices
+    if (window.matchMedia('(max-width: 800px)').matches){
+    header.style.backgroundImage = 'url(assets/bg-tablet.png)';
+  } else if (window.matchMedia('(max-width: 450px)').matches){
     header.style.backgroundImage = 'url(assets/bg-mobile.png)';
+  } else{
+    header.style.backgroundImage = 'none';
   }
-});
+}});
 
 //background opacity changes on hover (after the animation is done)
 let headerTitle = document.querySelector(".main-title");
