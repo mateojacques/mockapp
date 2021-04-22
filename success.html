@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        width: 100%;
+        height: auto;
+        padding: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bean-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8%;
+      }
+
+      #coffeebean {
+        fill: #41210a;
+      }
+
+      h1 {
+        color: #41210a;
+        line-height: 3rem;
+        margin-bottom: 7%;
+      }
+
+      .social__links {
+        width: 40%;
+        margin: 0 auto;
+      }
+
+      .social__links a i {
+        color: #41210a;
+        font-size: 1.8rem;
+      }
+
+      .social__links a i:hover {
+        color: rgba(65, 33, 10, 0.7);
+      }
+
+      .cta {
+        text-decoration: none;
+        color: #f3cf7a;
+        background-color: #ac3f21;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1.3rem;
+        cursor: pointer;
+      }
+
+      .back-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 7%;
+      }
+
+      @media screen and (max-width: 1366px) {
+        .container {
+          padding: 80px;
+        } 
+
+        .bean-div{
+            margin-bottom: 5%;
+        }
+      }
+
+      @media screen and (max-width: 450px){
+          .container {
+              padding: 40px;
+          }
+
+          .bean-div{
+              margin-bottom: 50px;
+          }
+
+          h1{
+              font-size: 1.5rem;
+              margin-bottom: 50px;
+          }
+
+          .social__links{
+              width: 80%;
+              margin-bottom: 70px;
+          }
+      }
+    </style>
+    <title>Mockapp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bean-div">
+        <a href="index.html">
+          <svg
+            id="coffeebean"
+            xmlns="http://www.w3.org/2000/svg"
+            width="57.61"
+            height="56.597"
+            viewBox="0 0 57.61 56.597"
+          >
+            <path
+              id="path4136"
+              d="M267.349,309c-13.731,13.213-18.354,30.688-10.326,39.031s25.668,4.395,39.4-8.818,18.354-30.688,10.326-39.031S281.08,295.785,267.349,309Zm13.325,13.847c12.081-11.625,22.416-20.485,23.084-19.789s-4.245,8.589-16.324,20.213-26.751,22.577-27.421,21.883,8.58-10.681,20.661-22.306Z"
+              transform="translate(-253.08 -295.806)"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <h1>
+        Thanks for your submission! We lied. We are not going to answer back. We
+        are a fake company after all. But the geek behind this website is
+        thankful. <br />
+        You can see more of my work in these links:
+      </h1>
+
+      <div class="social__links">
+        <a href="https://www.instagram.com/mateojacquesweb" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/mateojacquesweb" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.github.com/mateojacques" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/mateoleonjacques/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="back-btn">
+        <a href="index.html" class="cta">BACK TO HOMEPAGE</a>
+      </div>
+    </div>
+  </body>
+</html>
