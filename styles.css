@@ -1112,12 +1112,12 @@ body {
     width: 50%;
   }
   #header {
-    height: 60vh;
     margin-top: 30px;
     background: url(assets/bg-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 90vh;
   }
   #header .bg-animation {
     display: none;
@@ -1129,11 +1129,11 @@ body {
     font-size: 4rem;
   }
   #header .main-title .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 80px;
   }
   #header .main-title .cta {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .switch-theme {
     top: 110px;

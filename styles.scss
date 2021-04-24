@@ -987,12 +987,12 @@ body {
   }
 
   #header {
-    height: 60vh;
     margin-top: 30px;
     background: url(assets/bg-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 90vh;
 
     .bg-animation {
       display: none;
@@ -1006,12 +1006,12 @@ body {
       }
 
       .subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 80px;
       }
 
       .cta {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -1028,7 +1028,6 @@ body {
       .feature__box {
         width: 100%;
         margin-bottom: 50px;
-        min-height: 100vh;
 
         h1 {
           font-size: 1.7rem;
